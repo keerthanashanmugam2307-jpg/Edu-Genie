@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EduGenie - Learning Assistant</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div>
+            <h1>EduGenie</h1>
+            <p>Google Gemini Powered Learning Assistant</p>
+        </div>
+    </header>
+
+
+    <main class="container">
+
+        <section class="hero">
+            <h2>Learn Smarter with EduGenie</h2>
+            <p>
+                Ask questions, understand difficult topics,
+                generate quizzes, summarize text, and create
+                personalized learning paths.
+            </p>
+        </section>
+
+
+        <section class="card">
+
+            <label for="task">Choose a learning task</label>
+
+            <select id="task">
+                <option value="qa">Ask Question</option>
+                <option value="explain">Explain Topic</option>
+                <option value="quiz">Generate Quiz</option>
+                <option value="summarize">Summarize Text</option>
+                <option value="learn">Create Learning Path</option>
+            </select>
+
+
+            <label for="inputText">Enter your content</label>
+
+            <textarea
+                id="inputText"
+                placeholder="Type your question, topic, or text here..."
+                rows="8"
+            ></textarea>
+
+
+            <button id="generateBtn">
+                Generate
+            </button>
+
+
+            <div id="status"></div>
+
+
+            <section id="result" class="result">
+                <h3>Result</h3>
+                <div id="resultContent">
+                    Your result will appear here.
+                </div>
+            </section>
+
+        </section>
+
+
+        <section class="features">
+
+            <div class="feature-card">
+                <h3>💬 Q&A</h3>
+                <p>Ask educational questions and get simple answers.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>📚 Explanation</h3>
+                <p>Understand difficult concepts in beginner-friendly language.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>📝 Quiz</h3>
+                <p>Generate practice questions for revision.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>📖 Summary</h3>
+                <p>Turn long text into simple revision notes.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>🎯 Learning Path</h3>
+                <p>Create a structured plan to learn a topic.</p>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>EduGenie © 2026</p>
+    </footer>
+
+
+    <script src="/static/app.js"></script>
+
+</body>
+</html>
